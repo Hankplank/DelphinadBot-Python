@@ -19,7 +19,7 @@ async def on_ready():
     print("I'm really lazy and don't feel like adding support for multiple servers on the same bot, so the bot only works once per server... or at least with the statistics")
     status = check_database()
     print(status)
-
+    print('test')
 
 @client.event
 async def on_message(message):
