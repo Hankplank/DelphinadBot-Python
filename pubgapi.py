@@ -60,28 +60,28 @@ class PLAYER:
         data = json.loads(response.text)
         return data
 
-    def get_player_total_kills(self,player_region):
+    def get_player_total_kills(self, player_region):
         return self.filter_stat('Kills', self.data, player_region)
 
-    def get_player_rating(self,player_region):
+    def get_player_rating(self, player_region):
         return self.filter_stat('Rating', self.data, player_region)
 
-    def get_player_kdr(self,player_region):
+    def get_player_kdr(self, player_region):
         return self.filter_stat('K/D Ratio', self.data, player_region)
 
-    def get_kills_per_game(self,player_region):
+    def get_kills_per_game(self, player_region):
         return self.filter_stat('Kills Pg', self.data, player_region)
 
-    def get_wins_this_season(self,player_region):
+    def get_wins_this_season(self, player_region):
         return self.filter_stat('Wins', self.data, player_region)
 
-    def get_rounds_played(self,player_region):
+    def get_rounds_played(self, player_region):
         return self.filter_stat('Rounds Played', self.data, player_region)
 
-    def get_most_kills(self,player_region):
+    def get_most_kills(self, player_region):
         return self.filter_stat('Round Most Kills', self.data, player_region)
 
-    def get_longest_kill(self,player_region):
+    def get_longest_kill(self, player_region):
         return self.filter_stat('Longest Kill', self.data, player_region)
 
     def get_avg_damage_per_game(self, player_region):
